@@ -97,8 +97,8 @@ automatically-unhide-macos-hidden-apps = false
     alt-slash = 'layout h_tiles h_accordion'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    alt-period = 'focus --ignore-floating --boundaries-action wrap-around-the-workspace dfs-next'
-    alt-comma = 'focus --ignore-floating --boundaries-action wrap-around-the-workspace dfs-prev'
+    cmd-alt-period = 'focus --ignore-floating --boundaries-action wrap-around-the-workspace dfs-next'
+    cmd-alt-comma = 'focus --ignore-floating --boundaries-action wrap-around-the-workspace dfs-prev'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-h = 'move left'
@@ -111,18 +111,17 @@ automatically-unhide-macos-hidden-apps = false
     alt-equal = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+    alt-period = 'workspace next --wrap-around'
+    alt-comma = 'workspace prev --wrap-around'
+
     alt-1 = 'workspace 1'
     alt-2 = 'workspace 2'
     alt-3 = 'workspace 3'
-    alt-4 = 'workspace 4'
-    alt-5 = 'workspace 5'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
     alt-shift-3 = 'move-node-to-workspace 3'
-    alt-shift-4 = 'move-node-to-workspace 4'
-    alt-shift-5 = 'move-node-to-workspace 5'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -155,6 +154,12 @@ automatically-unhide-macos-hidden-apps = false
 [workspace-to-monitor-force-assignment]
     1 = 'main'                            # Monitor sequence number from left to right. 1-based indexing
     2 = 'main'                       # Main monitor
-    3 = 'main'                  # Non-main monitor in case when there are only two monitors
-    5 = 'built-in'                   
+    3 = 'built-in'                   
 
+[[on-window-detected]]
+if.app-id = 'com.todesktop.230313mzl4w4u92'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace 3'

@@ -51,3 +51,4 @@
 keybind = global:cmd+ctrl+t=toggle_quick_terminal
 quick-terminal-position=left
 quick-terminal-size=50%
+theme = Catppuccin Latte

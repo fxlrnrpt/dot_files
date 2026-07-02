@@ -117,11 +117,13 @@ automatically-unhide-macos-hidden-apps = false
     alt-1 = 'workspace 1'
     alt-2 = 'workspace 2'
     alt-3 = 'workspace 3'
+    alt-4 = 'workspace 4'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
     alt-shift-3 = 'move-node-to-workspace 3'
+    alt-shift-4 = 'move-node-to-workspace 4'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -155,6 +157,7 @@ automatically-unhide-macos-hidden-apps = false
     1 = 'main'                            # Monitor sequence number from left to right. 1-based indexing
     2 = 'main'                       # Main monitor
     3 = 'built-in'                   
+    4 = 'built-in'        
 
 [[on-window-detected]]
 if.app-id = 'com.todesktop.230313mzl4w4u92'

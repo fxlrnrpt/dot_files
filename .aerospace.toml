@@ -156,8 +156,8 @@ automatically-unhide-macos-hidden-apps = false
 [workspace-to-monitor-force-assignment]
     1 = 'main'                            # Monitor sequence number from left to right. 1-based indexing
     2 = 'main'                       # Main monitor
-    3 = 'built-in'                   
-    4 = 'built-in'        
+    3 = 'built-in'
+    4 = 'built-in'
 
 [[on-window-detected]]
 if.app-id = 'com.todesktop.230313mzl4w4u92'
@@ -165,4 +165,8 @@ run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
+run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+if.app-id = 'ru.keepcoder.Telegram'
 run = 'move-node-to-workspace 3'
